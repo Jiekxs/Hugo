@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://example.org/fr/categories/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://example.org/es/categories/index.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://example.org/es/categories/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://example.org/categories/index.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://example.org/fr/categories/index.html" />
+  </url>
+  <url>
+    <loc>https://example.org/fr/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://example.org/es/index.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://example.org/es/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://example.org/index.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://example.org/fr/index.html" />
+  </url>
+  <url>
+    <loc>https://example.org/fr/tags/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://example.org/es/tags/index.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://example.org/es/tags/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://example.org/tags/index.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://example.org/fr/tags/index.html" />
+  </url>
+</urlset>

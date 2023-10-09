@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.119.0">
+    <meta name="generator" content="Relearn 5.21.0+tip">
+    <meta name="description" content="">
+    <title>Chuleta Markdown :: Example use language</title>
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="/css/fontawesome-all.min.css?1696837561" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1696837561" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1696837561" rel="stylesheet">
+    <link href="/css/auto-complete.css?1696837561" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1696837561" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1696837561" rel="stylesheet">
+    <link href="/css/fonts.css?1696837561" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1696837561" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1696837561" rel="stylesheet">
+    <link href="/css/theme-purple.css?1696837561" rel="stylesheet" id="R-variant-style">
+    <link href="/css/variant.css?1696837561" rel="stylesheet">
+    <link href="/css/print.css?1696837561" rel="stylesheet" media="print">
+    <link href="/css/ie.css?1696837561" rel="stylesheet">
+    <script src="/js/url.js?1696837561"></script>
+    <script src="/js/variant.js?1696837561"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      var root_url="/";
+      var baseUri=root_url.replace(/\/$/, '');
+      // translations
+      window.T_Copy_to_clipboard = 'Copy to clipboard';
+      window.T_Copied_to_clipboard = 'Copied to clipboard!';
+      window.T_Copy_link_to_clipboard = 'Copy link to clipboard';
+      window.T_Link_copied_to_clipboard = 'Copied link to clipboard!';
+      window.T_No_results_found = 'No results found for \u0022{0}\u0022';
+      window.T_N_results_found = '{1} results found for \u0022{0}\u0022';
+      // some further base stuff
+      var baseUriFull='https:\/\/example.org/';
+      window.variants && variants.init( [ 'purple' ] );
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/apuntes/chuleta_markdown/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+              <button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)">
+                <i class="fa-fw fas fa-bars"></i>
+              </button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+              <button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)">
+                <i class="fa-fw fas fa-list-alt"></i>
+              </button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"><nav class="TableOfContents">
+  <ul>
+    <li><a href="#encabezados">Encabezados</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#encabezado-2">Encabezado 2</a>
+      <ul>
+        <li><a href="#encabezado-3">Encabezado 3</a></li>
+      </ul>
+    </li>
+    <li><a href="#estilos-de-texto">Estilos de texto</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#listas">Listas</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#checkbox">CheckBox</a></li>
+    <li><a href="#definiciones">Definiciones</a></li>
+    <li><a href="#código">Código</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#tablas">Tablas</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#citas-en-bloque">Citas en bloque</a></li>
+    <li><a href="#enlaces">Enlaces</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#notas-de-pie-de-página">Notas de pie de página</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Home</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/apuntes/index.html"><span itemprop="name">Apuntes</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Chuleta Markdown</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+              <a class="topbar-control" href="/apuntes/configurar-hosts-virtuales/index.html" title="Configurar hosts virtuales (🡐)">
+                <i class="fa-fw fas fa-chevron-left"></i>
+              </a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+              <a class="topbar-control" href="/apuntes/platilla/index.html" title="PLantilla (🡒)">
+                <i class="fa-fw fas fa-chevron-right"></i>
+              </a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+              <button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More">
+                <i class="fa-fw fas fa-ellipsis-v"></i>
+              </button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable chapter narrow" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="chapter">
+            <header class="headline">
+            </header>
+<div class="article-subheading">Chapter 4</div>
+<h1 id="chuleta-markdown">Chuleta Markdown</h1>
+
+<h2 id="encabezados">Encabezados</h2>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span># Encabezado 1
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Encabezado 2
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">### Encabezado 3
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#### Encabezado 4
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>##### Encabezado 5</span></span></code></pre></div><h1 id="encabezado-1">Encabezado 1</h1>
+<h2 id="encabezado-2">Encabezado 2</h2>
+<h3 id="encabezado-3">Encabezado 3</h3>
+<h4 id="encabezado-4">Encabezado 4</h4>
+<h5 id="encabezado-5">Encabezado 5</h5>
+<h2 id="estilos-de-texto">Estilos de texto</h2>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Negrita
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">**El veloz zorro marrón salta sobre el perro perezoso.**</span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">__El veloz zorro marrón salta sobre el perro perezoso.__</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Cursiva
+</span></span><span style="display:flex;"><span><span style="font-style:italic">*El veloz zorro marrón salta sobre el perro perezoso.*</span>
+</span></span><span style="display:flex;"><span><span style="font-style:italic">_El veloz zorro marrón salta sobre el perro perezoso._</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Negrita y cursiva
+</span></span><span style="display:flex;"><span>**_El veloz zorro marrón salta sobre el perro perezoso._**</span></span></code></pre></div><h5 id="negrita">Negrita</h5>
+<p><strong>El veloz zorro marrón salta sobre el perro perezoso.</strong></p>
+<p><strong>El veloz zorro marrón salta sobre el perro perezoso.</strong></p>
+<h5 id="cursiva">Cursiva</h5>
+<p><em>El veloz zorro marrón salta sobre el perro perezoso.</em></p>
+<p><em>El veloz zorro marrón salta sobre el perro perezoso.</em></p>
+<h5 id="negrita-y-cursiva">Negrita y cursiva</h5>
+<p><strong><em>El veloz zorro marrón salta sobre el perro perezoso.</em></strong></p>
+<h5 id="texto-tachado">Texto tachado</h5>
+<p><del>Strike through this text</del></p>
+<h5 id="sustitución-de-texto">Sustitución de texto</h5>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Double quotes <span style="color:#e6db74">`&#34;`</span> and single quotes <span style="color:#e6db74">`&#39;`</span> of enclosed text are replaced by <span style="font-style:italic">**</span>&#34;double curly quotes&#34;** and <span style="font-style:italic">**</span>&#39;single curly quotes&#39;**.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Double dashes <span style="color:#e6db74">`--`</span> and triple dashes <span style="color:#e6db74">`---`</span> are replaced by en-dash <span style="font-style:italic">**</span>--** and em-dash <span style="font-style:italic">**</span>---** entities.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Double arrows pointing left <span style="color:#e6db74">`&lt;&lt;`</span> or right <span style="color:#e6db74">`&gt;&gt;`</span> are replaced by arrow <span style="font-style:italic">**</span><span style="color:#960050;background-color:#1e0010">&lt;&lt;</span>** and <span style="font-style:italic">**</span>&gt;&gt;** entities.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Three consecutive dots <span style="color:#e6db74">`...`</span> are replaced by an ellipsis <span style="font-style:italic">**</span>...** entity.</span></span></code></pre></div><p>Double quotes <code>&quot;</code> and single quotes <code>'</code> of enclosed text are replaced by <strong>&ldquo;double curly quotes&rdquo;</strong> and <strong>&lsquo;single curly quotes&rsquo;</strong>.</p>
+<p>Double dashes <code>--</code> and triple dashes <code>---</code> are replaced by en-dash <strong>&ndash;</strong> and em-dash <strong>&mdash;</strong> entities.</p>
+<p>Double arrows pointing left <code>&lt;&lt;</code> or right <code>&gt;&gt;</code> are replaced by arrow <strong>&laquo;</strong> and <strong>&raquo;</strong> entities.</p>
+<p>Three consecutive dots <code>...</code> are replaced by an ellipsis <strong>&hellip;</strong> entity.</p>
+<h2 id="listas">Listas</h2>
+<h5 id="desordenadas">Desordenadas</h5>
+<p>Puede escribir una lista de elementos en la que el orden de los elementos no importe explícitamente.</p>
+<p>Es posible anidar listas aplicando sangría a un elemento para el siguiente subnivel.</p>
+<p>Puede utilizar cualquiera de -, *o +para indicar viñetas para cada elemento de la lista, pero no debe cambiar entre esos símbolos dentro de una lista completa.</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Lorem ipsum dolor sit amet
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Consectetur adipiscing elit
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">-</span> Vestibulum laoreet porttitor sem
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">-</span> Ac tristique libero volutpat at
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Nulla volutpat aliquam velit
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">-</span> Phasellus iaculis neque
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">-</span> Purus sodales ultricies
+</span></span><span style="display:flex;"><span>- Faucibus porta lacus fringilla vel</span></span></code></pre></div><ul>
+<li>Lorem ipsum dolor sit amet</li>
+<li>Consectetur adipiscing elit
+<ul>
+<li>Vestibulum laoreet porttitor sem</li>
+<li>Ac tristique libero volutpat at</li>
+</ul>
+</li>
+<li>Nulla volutpat aliquam velit
+<ul>
+<li>Phasellus iaculis neque</li>
+<li>Purus sodales ultricies</li>
+</ul>
+</li>
+<li>Faucibus porta lacus fringilla vel</li>
+</ul>
+<h5 id="ordenadas">Ordenadas</h5>
+<p>Puede crear una lista de elementos en los que el orden de los elementos sí importa explícitamente.</p>
+<p>Es posible anidar listas aplicando sangría a un elemento para el siguiente subnivel.</p>
+<p>Markdown numerará automáticamente cada uno de sus artículos de forma consecutiva. Esto significa que el número de pedido que proporciona es irrelevante.</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span><span style="color:#66d9ef">1.</span> Lorem ipsum dolor sit amet
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">3.</span> Consectetur adipiscing elit
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">1.</span> Integer molestie lorem at massa
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">7.</span> Facilisis in pretium nisl aliquet
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">99.</span> Nulla volutpat aliquam velit
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">1.</span> Faucibus porta lacus fringilla vel
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">1.</span> Aenean sit amet erat nunc
+</span></span><span style="display:flex;"><span>17. Eget porttitor lorem</span></span></code></pre></div><ol>
+<li>Lorem ipsum dolor sit amet</li>
+<li>Consectetur adipiscing elit
+1. Integer molestie lorem at massa
+7. Facilisis in pretium nisl aliquet</li>
+<li>Nulla volutpat aliquam velit
+<ol>
+<li>Faucibus porta lacus fringilla vel</li>
+<li>Aenean sit amet erat nunc</li>
+</ol>
+</li>
+<li>Eget porttitor lorem</li>
+</ol>
+<h2 id="checkbox">CheckBox</h2>
+<p>En GFM (GitHub Flavored Markdown) puede agregar listas de tareas que dan como resultado elementos marcados o no marcados en los que no se puede hacer clic.</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span><span style="color:#66d9ef">- [x]</span> Basic Test
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">- [ ]</span> More Tests
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">- [x]</span> View
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">- [x]</span> Hear
+</span></span><span style="display:flex;"><span>  - [ ] Smell</span></span></code></pre></div><ul>
+<li><input checked="" disabled="" type="checkbox"> Basic Test</li>
+<li><input disabled="" type="checkbox"> More Tests
+<ul>
+<li><input checked="" disabled="" type="checkbox"> View</li>
+<li><input checked="" disabled="" type="checkbox"> Hear</li>
+<li><input disabled="" type="checkbox"> Smell</li>
+</ul>
+</li>
+</ul>
+<h2 id="definiciones">Definiciones</h2>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Apple
+</span></span><span style="display:flex;"><span>: Pomaceous fruit of plants of the genus Malus in the family Rosaceae.
+</span></span><span style="display:flex;"><span>: An American computer company.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Orange
+</span></span><span style="display:flex;"><span>: The fruit of an evergreen tree of the genus Citrus.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  You can make juice out of it.
+</span></span><span style="display:flex;"><span>: A telecommunication company.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  You can&#39;t make juice out of it.</span></span></code></pre></div><dl>
+<dt>Apple</dt>
+<dd>Pomaceous fruit of plants of the genus Malus in the family Rosaceae.</dd>
+<dd>An American computer company.</dd>
+<dt>Orange</dt>
+<dd>The fruit of an evergreen tree of the genus Citrus.
+<p>You can make juice out of it.</p>
+</dd>
+<dd>A telecommunication company.
+<p>You can&rsquo;t make juice out of it.</p>
+</dd>
+</dl>
+<h2 id="código">Código</h2>
+<h5 id="codigo-en-línea">Codigo en línea</h5>
+<p>Los fragmentos de código en línea se pueden incluir con comillas invertidas <strong>`</strong>.</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>In this example, <span style="color:#e6db74">`&lt;div&gt;&lt;/div&gt;`</span> is marked as code.</span></span></code></pre></div><p>In this example, <code>&lt;div&gt;&lt;/div&gt;</code> is marked as code.</p>
+<h5 id="bloque-de-código-sangrado">Bloque de código sangrado</h5>
+<p>Se puede generar un bloque de código simple sangrando varias líneas de código con al menos dos espacios.</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Dejate impresionado por mi codigo avanzado
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    // Some comments
+</span></span><span style="display:flex;"><span>    line 1 of code
+</span></span><span style="display:flex;"><span>    line 2 of code
+</span></span><span style="display:flex;"><span>    line 3 of code</span></span></code></pre></div><p>Dejate impresionado por mi codigo avanzado</p>
+<pre><code>// Some comments
+line 1 of code
+line 2 of code
+line 3 of code
+</code></pre>
+<h5 id="bloque-de-código-vallado">Bloque de código vallado</h5>
+<p>Si desea obtener más control de su bloque de código, puede encerrar su código con al menos tres comillas invertidas, ```lo que se conoce como valla.</p>
+<p>En GFM (GitHub Flavored Markdown) también puede agregar un especificador de idioma directamente después de la valla de apertura, ```jsy el resaltado de sintaxis se aplicará automáticamente de acuerdo con el idioma seleccionado en el HTML renderizado.</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">grunt</span>.<span style="color:#a6e22e">initConfig</span>({
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">assemble</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">options</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">assets</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;docs/assets&#39;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">data</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;src/data/*.{json,yml}&#39;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">helpers</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;src/custom-helpers.js&#39;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">partials</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#39;src/partials/**/*.{hbs,md}&#39;</span>]
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">pages</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">options</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">layout</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;default.hbs&#39;</span>
+</span></span><span style="display:flex;"><span>      },
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">files</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;./&#39;</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#39;src/templates/pages/index.hbs&#39;</span>]
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>};</span></span></code></pre></div><h2 id="tablas">Tablas</h2>
+<p>Puede crear tablas agregando tuberías como divisores entre cada celda y agregando una línea de guiones (también separados por barras) debajo del encabezado.</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>| Option | Description |
+</span></span><span style="display:flex;"><span>|--------|-------------|
+</span></span><span style="display:flex;"><span>| data   | path to data files to supply the data that will be passed into templates. |
+</span></span><span style="display:flex;"><span>| engine | engine to be used for processing templates. Handlebars is the default. |
+</span></span><span style="display:flex;"><span>| ext    | extension to be used for dest files. |</span></span></code></pre></div><table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>data</td>
+<td>path to data files to supply the data that will be passed into templates.</td>
+</tr>
+<tr>
+<td>engine</td>
+<td>engine to be used for processing templates. Handlebars is the default.</td>
+</tr>
+<tr>
+<td>ext</td>
+<td>extension to be used for dest files.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="alineadas">Alineadas</h5>
+<p>Agregar dos puntos en el lado izquierdo y/o derecho de los guiones debajo de cualquier encabezado alineará el texto de esa columna en consecuencia.</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Markdown" data-lang="Markdown"><span style="display:flex;"><span>| Option | Number | Description |
+</span></span><span style="display:flex;"><span>|-------:|:------:|:------------|
+</span></span><span style="display:flex;"><span>| data   | 1      | path to data files to supply the data that will be passed into templates. |
+</span></span><span style="display:flex;"><span>| engine | 2      | engine to be used for processing templates. Handlebars is the default. |
+</span></span><span style="display:flex;"><span>| ext    | 3      | extension to be used for dest files. |</span></span></code></pre></div><table>
+<thead>
+<tr>
+<th style="text-align:right">Option</th>
+<th style="text-align:center">Number</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">data</td>
+<td style="text-align:center">1</td>
+<td style="text-align:left">path to data files to supply the data that will be passed into templates.</td>
+</tr>
+<tr>
+<td style="text-align:right">engine</td>
+<td style="text-align:center">2</td>
+<td style="text-align:left">engine to be used for processing templates. Handlebars is the default.</td>
+</tr>
+<tr>
+<td style="text-align:right">ext</td>
+<td style="text-align:center">3</td>
+<td style="text-align:left">extension to be used for dest files.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="citas-en-bloque">Citas en bloque</h2>
+<p>Para citar bloques de contenido de otra fuente dentro de su documento, agregue &gt;antes de cualquier texto que desee citar.</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Markdown" data-lang="Markdown"><span style="display:flex;"><span><span style="color:#66d9ef">&gt; </span><span style="font-style:italic">Donec massa lacus, ultricies a ullamcorper in, fermentum sed augue. Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi.
+</span></span></span><span style="display:flex;"><span><span style="font-style:italic"></span><span style="color:#66d9ef">&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef"></span><span style="font-style:italic">&gt; &gt; Sed adipiscing elit vitae augue consectetur a gravida nunc vehicula. Donec auctor odio non est accumsan facilisis. Aliquam id turpis in dolor tincidunt mollis ac eu diam.
+</span></span></span><span style="display:flex;"><span><span style="font-style:italic"></span>&gt;
+</span></span><span style="display:flex;"><span>&gt; Mauris sit amet ligula egestas, feugiat metus tincidunt, luctus libero. Donec congue finibus tempor. Vestibulum aliquet sollicitudin erat, ut aliquet purus posuere luctus.</span></span></code></pre></div><blockquote>
+<p>Donec massa lacus, ultricies a ullamcorper in, fermentum sed augue. Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi.</p>
+<blockquote>
+<p>Sed adipiscing elit vitae augue consectetur a gravida nunc vehicula. Donec auctor odio non est accumsan facilisis. Aliquam id turpis in dolor tincidunt mollis ac eu diam.</p>
+</blockquote>
+<p>Mauris sit amet ligula egestas, feugiat metus tincidunt, luctus libero. Donec congue finibus tempor. Vestibulum aliquet sollicitudin erat, ut aliquet purus posuere luctus.</p>
+</blockquote>
+<h2 id="enlaces">Enlaces</h2>
+<h5 id="automático">Automático</h5>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Markdown" data-lang="Markdown"><span style="display:flex;"><span>Este es un enlace a https://www.ktm.com</span></span></code></pre></div><p>Este es un enlace a <a href="https://www.ktm.com" target="_blank">https://www.ktm.com</a></p>
+<h5 id="básico">Básico</h5>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Markdown" data-lang="Markdown"><span style="display:flex;"><span>[<span style="color:#f92672">Ktm</span>](<span style="color:#a6e22e">https://www.ktm.com</span>)</span></span></code></pre></div><p><a href="https://www.ktm.com" target="_blank">Ktm</a></p>
+<h5 id="con-información">Con información</h5>
+<p>Muestra un texto al pasar el cursor por encima del enlace</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Markdown" data-lang="Markdown"><span style="display:flex;"><span>[<span style="color:#f92672">Ktm</span>](<span style="color:#a6e22e">https://www.ktm.com &#34;Pagina oficial&#34;</span>)</span></span></code></pre></div><p><a href="https://www.ktm.com" title="Pagina oficial" target="_blank">Ktm</a></p>
+<h2 id="notas-de-pie-de-página">Notas de pie de página</h2>
+<p>Las notas a pie de página funcionan principalmente como enlaces de estilo de referencia. Una nota al pie se compone de dos cosas: un marcador en el texto que se convertirá en un número en superíndice y una definición de nota al pie que se colocará en una lista de notas al pie.</p>
+<p>That&rsquo;s some text with a footnote<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<p>That&rsquo;s some more text with a footnote.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>And that&rsquo;s the footnote.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>Anything of interest goes here.</p>
+<p>Blue light glows blue.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+            <footer class="footline">
+
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a id="logo"
+            href="http://cpilosenlaces.com"
+            style="
+              color: #3d414d;
+              font-family: 'Novacento Sans Wide', 'Helvetica', 'Tahoma', 'Geneva', 'Arial', sans-serif;
+              font-size: 30px;
+              font-weight: bold;
+              margin-top: -2px;
+            ">
+                <img src="/images/una.png" alt="DAW">
+            DAW
+          </a>
+        </div>
+        <div class="searchbox default-animation">
+          <i class="fas fa-search" title="Search (CTRL+ALT+f)"></i>
+          <label class="a11y-only" for="R-section-">Search</label>
+          <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+          <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+        </div>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1696837561" defer></script>
+        <script src="/js/lunr/lunr.min.js?1696837561" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1696837561" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1696837561" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1696837561" defer></script>
+        <script src="/js/search.js?1696837561" defer></script>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <ul>
+          <li><a class="padding" href="/index.html"><i class='fas fa-university'></i> CPI Los Enlaces</a></li>
+        </ul>
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+          <li data-nav-id="/apuntes/index.html" class="parent "><a class="padding" href="/apuntes/index.html">Apuntes</a><ul id="R-subsections-15393925fea5bca4a4df1f77b074130e" class="morespace collapsible-menu">
+          <li data-nav-id="/apuntes/instalacion/index.html" class=""><a class="padding" href="/apuntes/instalacion/index.html">Instalación de Hugo</a></li>
+          <li data-nav-id="/apuntes/configurar-hosts-virtuales/index.html" class=""><a class="padding" href="/apuntes/configurar-hosts-virtuales/index.html">Configurar hosts virtuales</a></li>
+          <li data-nav-id="/apuntes/chuleta_markdown/index.html" class="active"><a class="padding" href="/apuntes/chuleta_markdown/index.html">Chuleta Markdown</a></li>
+          <li data-nav-id="/apuntes/platilla/index.html" class=""><a class="padding" href="/apuntes/platilla/index.html">PLantilla</a></li>
+          <li data-nav-id="/apuntes/shortcuts/index.html" class=""><a class="padding" href="/apuntes/shortcuts/index.html">Shortcuts</a></li></ul></li>
+          </ul>
+        </div>
+        <div id="R-shortcuts">
+          <div class="nav-title padding">More</div>
+          <ul class="space">
+            <li><a class="padding" href="https://php.net"><i class='fab fa-php'></i>   Lenguaje php</a></li>
+            <li><a class="padding" href="https://es.wikieducator.org/Usuario:ManuelRomero/ProgramacionWeb/Contenido"><i class='fab fa-wikipedia-w'></i>   Wiki del curso</a></li>
+            <li><a class="padding" href="http://manuel.infenlaces.com/dwes/ejercicios/"><i class='far fa-question-circle'></i>   Ejercicios resueltos</a></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showLangSwitch showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showLangSwitch showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showLangSwitch">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch showLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fas fa-language fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = baseUri + this.value;">
+                      <option id="R-en" value="/apuntes/chuleta_markdown/index.html" lang="en" selected>English</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fas fa-paint-brush fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-purple" value="purple" selected>Purple</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fas fa-history fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter">
+	    <p>BOFFS<a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1696837561" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1696837561" defer></script>
+    <script src="/js/theme.js?1696837561" defer></script>
+  </body>
+</html>
