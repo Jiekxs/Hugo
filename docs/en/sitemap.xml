@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.org/apuntes/index.html</loc>
+    <loc>https://Jiekxs.github.io/Hugo/apuntes/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/index.html</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://example.org/es/index.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://example.org/es/index.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://example.org/index.html" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://example.org/fr/index.html" />
+    <loc>https://Jiekxs.github.io/Hugo/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://Jiekxs.github.io/Hugo/es/index.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://Jiekxs.github.io/Hugo/es/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://Jiekxs.github.io/Hugo/index.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://Jiekxs.github.io/Hugo/fr/index.html" />
   </url>
   <url>
-    <loc>https://example.org/apuntes/instalacion/index.html</loc>
+    <loc>https://Jiekxs.github.io/Hugo/apuntes/instalacion/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/apuntes/configurar-hosts-virtuales/index.html</loc>
+    <loc>https://Jiekxs.github.io/Hugo/apuntes/configurar-hosts-virtuales/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/apuntes/chuleta_markdown/index.html</loc>
+    <loc>https://Jiekxs.github.io/Hugo/apuntes/chuleta_markdown/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/apuntes/platilla/index.html</loc>
+    <loc>https://Jiekxs.github.io/Hugo/apuntes/platilla/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/apuntes/shortcuts/index.html</loc>
+    <loc>https://Jiekxs.github.io/Hugo/apuntes/shortcuts/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/categories/index.html</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://example.org/es/categories/index.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://example.org/es/categories/index.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://example.org/categories/index.html" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://example.org/fr/categories/index.html" />
+    <loc>https://Jiekxs.github.io/Hugo/categories/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://Jiekxs.github.io/Hugo/es/categories/index.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://Jiekxs.github.io/Hugo/es/categories/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://Jiekxs.github.io/Hugo/categories/index.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://Jiekxs.github.io/Hugo/fr/categories/index.html" />
   </url>
   <url>
-    <loc>https://example.org/tags/index.html</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://example.org/es/tags/index.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://example.org/es/tags/index.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://example.org/tags/index.html" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://example.org/fr/tags/index.html" />
+    <loc>https://Jiekxs.github.io/Hugo/tags/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://Jiekxs.github.io/Hugo/es/tags/index.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://Jiekxs.github.io/Hugo/es/tags/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://Jiekxs.github.io/Hugo/tags/index.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://Jiekxs.github.io/Hugo/fr/tags/index.html" />
   </url>
 </urlset>

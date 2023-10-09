@@ -2,15 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Apuntes on Example use language</title>
-    <link>https://example.org/apuntes/index.html</link>
+    <link>https://Jiekxs.github.io/Hugo/apuntes/index.html</link>
     <description>Recent content in Apuntes on Example use language</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://example.org/apuntes/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="https://Jiekxs.github.io/Hugo/apuntes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Instalación de Hugo</title>
-      <link>https://example.org/apuntes/instalacion/index.html</link>
+      <link>https://Jiekxs.github.io/Hugo/apuntes/instalacion/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/apuntes/instalacion/index.html</guid>
+      <guid>https://Jiekxs.github.io/Hugo/apuntes/instalacion/index.html</guid>
       <description>Instalación sudo snap install hugoCreamos un sitio nuevo:
 hugo new site PruebaNos movemos a la carpeta &amp;ldquo;themes&amp;rdquo; y hacemos un clonamos el tema del repositorio:
 git clone https://github.com/McShelby/hugo-theme-relearn.gitUna vez clonado vamos al archivo hugo.toml y añadimos lo siguiente:
@@ -19,9 +19,9 @@ baseURL = &amp;#39;https://example.org/&amp;#39; languageCode = &amp;#39;en-us&a
     </item>
     <item>
       <title>Configurar hosts virtuales</title>
-      <link>https://example.org/apuntes/configurar-hosts-virtuales/index.html</link>
+      <link>https://Jiekxs.github.io/Hugo/apuntes/configurar-hosts-virtuales/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/apuntes/configurar-hosts-virtuales/index.html</guid>
+      <guid>https://Jiekxs.github.io/Hugo/apuntes/configurar-hosts-virtuales/index.html</guid>
       <description>Se actualizan los repositorios y el sistema sudo apt update sudo apt upgrade -y Instalar apache sudo apt install apache2 -yPara comprobar que se ha instalado correctamente utilizamos este comando para ver el estado del servicio:
 sudo systemctl status apache2 O podemos poner en el navegador 127.0.0.1 o http://localhost/.
 Editar el fichero hosts Editamos el fichero con permisos de super usuario con:
@@ -29,23 +29,23 @@ sudo nano /etc/hostsNos saldra lo siguiente y añadimos un dominio local.</descr
     </item>
     <item>
       <title>Chuleta Markdown</title>
-      <link>https://example.org/apuntes/chuleta_markdown/index.html</link>
+      <link>https://Jiekxs.github.io/Hugo/apuntes/chuleta_markdown/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/apuntes/chuleta_markdown/index.html</guid>
+      <guid>https://Jiekxs.github.io/Hugo/apuntes/chuleta_markdown/index.html</guid>
       <description>Encabezados # Encabezado 1 ## Encabezado 2 ### Encabezado 3 #### Encabezado 4 ##### Encabezado 5Encabezado 1 Encabezado 2 Encabezado 3 Encabezado 4 Encabezado 5 Estilos de texto Negrita **El veloz zorro marrón salta sobre el perro perezoso.** __El veloz zorro marrón salta sobre el perro perezoso.__ Cursiva *El veloz zorro marrón salta sobre el perro perezoso.* _El veloz zorro marrón salta sobre el perro perezoso._ Negrita y cursiva **_El veloz zorro marrón salta sobre el perro perezoso.</description>
     </item>
     <item>
       <title>PLantilla</title>
-      <link>https://example.org/apuntes/platilla/index.html</link>
+      <link>https://Jiekxs.github.io/Hugo/apuntes/platilla/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/apuntes/platilla/index.html</guid>
+      <guid>https://Jiekxs.github.io/Hugo/apuntes/platilla/index.html</guid>
       <description></description>
     </item>
     <item>
       <title>Shortcuts</title>
-      <link>https://example.org/apuntes/shortcuts/index.html</link>
+      <link>https://Jiekxs.github.io/Hugo/apuntes/shortcuts/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/apuntes/shortcuts/index.html</guid>
+      <guid>https://Jiekxs.github.io/Hugo/apuntes/shortcuts/index.html</guid>
       <description>Attachments Solo se usan para archivos, los archivos se muestran automáticamente, tenemos que crear una carpeta &amp;ldquo;nombre_de_nuestro.md.files&amp;quot;en le mismo nivel que nuestro archivo.md actual
 Info asasf.pdf (0 B) fichero.txt (7 B) lsaldsald.txt (0 B) Note asasf.pdf (0 B) fichero.txt (7 B) lsaldsald.txt (0 B) Tip asasf.pdf (0 B) fichero.txt (7 B) lsaldsald.txt (0 B) Warning asasf.pdf (0 B) fichero.txt (7 B) lsaldsald.txt (0 B) Insignias Su uso es decorativo
 Important Version6.</description>
