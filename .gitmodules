@@ -1,3 +1,3 @@
 [submodule "relearn"]
- path="/theme/relearn"
+ path="theme/relearn"
  url="https://github.com/McShelby/hugo-theme-relearn.git"
